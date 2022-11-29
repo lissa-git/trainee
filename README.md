@@ -1,1 +1,1 @@
-# Посмотреть виджеты на [GITHUB PAGES]https://lissa-git.github.io/trainee/)
+# Посмотреть виджеты на [GITHUB PAGES](https://lissa-git.github.io/trainee/)
