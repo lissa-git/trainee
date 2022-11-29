@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Notifications</title> 
+    <title>Messenger</title> 
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,87 @@
     <main class="main">
         <a  class="main-page-link" href="../index.html">Return to main page</a>
         <section class="messenger">
-            
+            <div class="messenger__head">
+                <div class="messenger__head-inner">
+                    <h1 class="messenger__title">Messages</h1>
+                    <p class="messenger__subtitle">Direct and team messages</p>
+                </div>
+                <div class="messenger__menu">
+                    <button class="messenger__menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- place for menu -->
+                </div>
+            </div>
+            <button class="messenger__create-conv-btn">
+                <span>Create Conversation</span>
+            </button>
+            <div class="messenger__body">
+                <div class="messenger__chat chat">
+                    <div class="chat__image">
+                        <img src="../img/RobertAnderson.jpg" alt="">
+                    </div>
+                    <div class="chat__preview">
+                        <div class="chat__about">
+                            <p class="chat__name">Robert Anderson</p>
+                            <p class="chat__last-seen">Just now</p>
+                        </div>
+                        <p class="chat__message">I’ll do that task now, you can</p>
+                    </div>
+                </div>
+                <div class="messenger__chat chat">
+                    <div class="chat__image">
+                        <img src="../img/HenryKane.jpg" alt="">
+                    </div>
+                    <div class="chat__preview">
+                        <div class="chat__about">
+                            <p class="chat__name">Henry Kane</p>
+                            <p class="chat__last-seen">30mins ago</p>
+                        </div>
+                        <p class="chat__message">Here is UX research Documen...</p>
+                    </div>
+                    <p class="chat__unread-amount">3</p>
+                </div>
+                <div class="messenger__chat chat">
+                    <div class="chat__image">
+                        <img src="../img/JulianaWills.jpg" alt="">
+                    </div>
+                    <div class="chat__preview">
+                        <div class="chat__about">
+                            <p class="chat__name">Juliana Wills</p>
+                            <p class="chat__last-seen">3h ago</p>
+                        </div>
+                        <p class="chat__message">If you complete Webdesign Ta...</p>
+                    </div>
+                </div>
+                <div class="messenger__chat chat">
+                    <div class="chat__image">
+                        <img src="../img/EmmaOlivia.jpg" alt="">
+                    </div>
+                    <div class="chat__preview">
+                        <div class="chat__about">
+                            <p class="chat__name">Emma Olivia</p>
+                            <p class="chat__last-seen">a day ago</p>
+                        </div>
+                        <p class="chat__message">Are you there?</p>
+                    </div>
+                    <p class="chat__unread-amount">2</p>
+                </div>
+                <div class="messenger__chat chat">
+                    <div class="chat__image">
+                        <img src="../img/BenjaminJack.jpg" alt="">
+                    </div>
+                    <div class="chat__preview">
+                        <div class="chat__about">
+                            <p class="chat__name">Benjamin Jack</p>
+                            <p class="chat__last-seen">2d ago</p>
+                        </div>
+                        <p class="chat__message">Hi 👋 </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
