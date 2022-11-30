@@ -154,6 +154,24 @@ body a {
   margin-top: 30px;
 }
 
+.menu-btn {
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+}
+
+.menu-btn span {
+  width: 4px;
+  height: 4px;
+  background-color: #5C5F62;
+  border-radius: 50%;
+}
+
 /*Notifications widget*/
 
 .notifications {
@@ -332,7 +350,7 @@ body a {
   margin: 0 18px;
 }
 
-.messenger__menu-btn {
+.menu-btn {
   width: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,7 +361,7 @@ body a {
   background-color: transparent;
 }
 
-.messenger__menu-btn span {
+.menu-btn span {
   width: 4px;
   height: 4px;
   background-color: #5C5F62;
