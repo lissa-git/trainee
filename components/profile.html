@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Notifications</title> 
+    <title>Profile</title> 
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,147 @@
     <main class="main">
         <a  class="main-page-link" href="../index.html">Return to main page</a>
         <section class="profile">
-            
+            <div class="profile__head">
+                <div class="profile__user-info">
+                    <div class="profile__avatar">
+                        <img src="../img/default-profile-logo.png" alt="">
+                    </div>
+                    <div class="profile__user-data">
+                        <p class="profile__name">Prakash Subramani</p>
+                        <div class="profile__username">@prakashsaas</div>
+                    </div>
+                </div>
+                <button class="profile__edit-profile">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.219992 9.60273C0.149748 9.67288 0.0941366 9.75624 0.0563769 9.84799C0.0186173 9.93975 -0.000540711 10.0381 1.16109e-05 10.1373L0.0259314 14.2552C0.0273749 14.4542 0.107884 14.6444 0.249755 14.784C0.391625 14.9237 0.583242 15.0014 0.782469 15L4.85607 14.9731C5.05336 14.972 5.24231 14.8935 5.38212 14.7545L14.2183 5.93216C15.2604 4.89175 15.2607 3.18509 14.2183 2.14469L12.8518 0.780309C11.8097 -0.260107 10.0984 -0.260099 9.05626 0.780309L0.219992 9.60273ZM1.50454 10.4419L7.58382 4.37213L10.6198 7.40337L4.53848 13.4752L1.52424 13.4948L1.50454 10.4419ZM8.64631 3.3113L10.1187 1.84125C10.5905 1.37018 11.3174 1.37019 11.7892 1.84125L13.1557 3.20563C13.6276 3.67669 13.6273 4.40038 13.1557 4.87147L11.6823 6.34254L8.64631 3.3113Z" fill="#6837E7"/>
+                    </svg>
+                    Edit Profile
+                </button>
+            </div>
+            <div class="profile__about">
+                <h2 class="profile__about-title">About</h2>
+                <p class="profile__about-decr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="profile__tasks">
+                <h2 class="profile__tasks-title"> 
+                    Today Tasks 
+                    <p class="profile__tasks-amount">(2)</p>
+                </h2>
+                <div class="profile__tasks-body">
+                    <div class="profile__tasks-item task">
+                        <div class="task__inner">
+                            <label class="task__label">
+                                <input class="task__input" type="checkbox" name="task">
+                                <span class="task__completed"></span>
+                                <span class="task__name">Complete all pages in mobile app design based on Super OS Components</span>
+                                <span class="task__check"></span>
+                            </label>
+                            <div class="task__info">
+                                <p class="task__date">25 Aug 2022 - 11:30AM</p>
+                                <p class="task__tag">Design Tag</p>
+                            </div>
+                        </div>
+                        <div class="task__menu">
+                            <button class="task__menu-btn menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- place for menu -->
+                        </div>
+                    </div>
+                    <div class="profile__tasks-item task">
+                        <div class="task__inner">
+                            <label class="task__label">
+                                <input class="task__input" type="checkbox" name="task">
+                                <span class="task__completed"></span>
+                                <span class="task__name">Meet with front end developers to discuss about new features</span>
+                                <span class="task__check"></span>
+                            </label>
+                            <div class="task__info">
+                                <p class="task__date">25 Aug 2022 - 11:30AM</p>
+                                <p class="task__tag">Design Tag</p>
+                            </div>
+                        </div>
+                        <div class="task__menu">
+                            <button class="task__menu-btn menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- place for menu -->
+                        </div>
+                    </div>
+                    <div class="profile__tasks-item task">
+                        <div class="task__inner">
+                            <label class="task__label">
+                                <input class="task__input" type="checkbox" name="task" checked>
+                                <span class="task__completed"></span>
+                                <span class="task__name">Complete User testing with at least 5 users</span>
+                                <span class="task__check"></span>
+                            </label>
+                            <div class="task__info">
+                                <p class="task__date">25 Aug 2022 - 11:30AM</p>
+                                <p class="task__tag">Design Tag</p>
+                            </div>
+                        </div>
+                        <div class="task__menu">
+                            <button class="task__menu-btn menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- place for menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile__teams">
+                <h2 class="profile__teams-title">
+                    Joined Teams
+                    <p class="profile__teams-amount">(2)</p>
+                </h2>
+                <div class="profile__teams-body">
+                    <div class="profile__teams-item team">
+                        <div class="team__inner">
+                            <div class="team__image">
+                                <img src="../img/dev-team.jpg" alt="">
+                            </div>
+                            <div class="team__info">
+                                <p class="team__name">Develoment Team</p>
+                                <p class="team__members-amount">36 Members</p>
+                            </div>
+                        </div>
+                        <div class="team__menu">
+                            <button class="team__menu-btn menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- place for menu -->
+                        </div>
+                    </div>
+                    <div class="profile__teams-item team">
+                        <div class="team__inner">
+                            <div class="team__image">
+                                <img src="../img/default-team-image.png" alt="">
+                            </div>
+                            <div class="team__info">
+                                <p class="team__name">Develoment Team</p>
+                                <p class="team__members-amount">36 Members</p>
+                            </div>
+                        </div>
+                        <div class="team__menu">
+                            <button class="team__menu-btn menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- place for menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
