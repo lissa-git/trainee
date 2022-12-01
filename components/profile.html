@@ -9,19 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
-    <link rel="stylesheet" href="../common/null.css">
-    <link rel="stylesheet" href="../common/style.css">
-    <link rel="stylesheet" href="../common/elements.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <main class="main">
-        <a  class="main-page-link" href="../../index.html">Return to main page</a>
+        <a class="main-page-link" href="../index.html">Return to main page</a>
         <section class="profile">
             <div class="profile__head">
                 <div class="profile__user-info">
                     <div class="profile__avatar">
-                        <img src="../../assets/default-profile-logo.png" alt="">
+                        <img src="../assets/img/default-profile-logo.png" alt="">
                     </div>
                     <div class="profile__user-data">
                         <p class="profile__name">Prakash Subramani</p>
@@ -44,8 +41,8 @@
                     Today Tasks 
                     <p class="profile__tasks-amount">(2)</p>
                 </h2>
-                <div class="profile__tasks-body">
-                    <div class="profile__tasks-item task">
+                <ul class="profile__tasks-list">
+                    <li class="profile__tasks-item task">
                         <div class="task__inner">
                             <label class="task__label">
                                 <input class="task__input" type="checkbox" name="task">
@@ -66,8 +63,8 @@
                             </button>
                             <!-- place for menu -->
                         </div>
-                    </div>
-                    <div class="profile__tasks-item task">
+                    </li>
+                    <li class="profile__tasks-item task">
                         <div class="task__inner">
                             <label class="task__label">
                                 <input class="task__input" type="checkbox" name="task">
@@ -88,8 +85,8 @@
                             </button>
                             <!-- place for menu -->
                         </div>
-                    </div>
-                    <div class="profile__tasks-item task">
+                    </li>
+                    <li class="profile__tasks-item task">
                         <div class="task__inner">
                             <label class="task__label">
                                 <input class="task__input" type="checkbox" name="task" checked>
@@ -110,19 +107,19 @@
                             </button>
                             <!-- place for menu -->
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div class="profile__teams">
                 <h2 class="profile__teams-title">
                     Joined Teams
                     <p class="profile__teams-amount">(2)</p>
                 </h2>
-                <div class="profile__teams-body">
-                    <div class="profile__teams-item team">
+                <ul class="profile__teams-list">
+                    <li class="profile__teams-item team">
                         <div class="team__inner">
                             <div class="team__image">
-                                <img src="../../assets/dev-team.jpg" alt="">
+                                <img src="../assets/img/dev-team.jpg" alt="team avatar">
                             </div>
                             <div class="team__info">
                                 <p class="team__name">Develoment Team</p>
@@ -137,11 +134,11 @@
                             </button>
                             <!-- place for menu -->
                         </div>
-                    </div>
-                    <div class="profile__teams-item team">
+                    </li>
+                    <li class="profile__teams-item team">
                         <div class="team__inner">
                             <div class="team__image">
-                                <img src="../../assets/default-team-image.png" alt="">
+                                <img src="../assets/img/default-team-image.png" alt="team avatar">
                             </div>
                             <div class="team__info">
                                 <p class="team__name">Develoment Team</p>
@@ -156,8 +153,8 @@
                             </button>
                             <!-- place for menu -->
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
