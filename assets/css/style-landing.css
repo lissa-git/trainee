@@ -862,3 +862,38 @@ body a {
   font-size: 38px;
   line-height: 120%;
 }
+
+.stages__title {
+  margin-bottom: 10px;
+}
+
+.stages__list {
+  margin-top: 48px;
+}
+
+.work-stage {
+  background-color: var(--dark-grey-color);
+  padding: 10px 30px 30px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: var(--bg-transition);
+  -o-transition: var(--bg-transition);
+  transition: var(--bg-transition);
+  max-width: 330px;
+  width: 100%;
+}
+
+.work-stage:hover {
+  background-color: #513d6b;
+}
+
+.work-stage__img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.work-stage__figcaption {
+  margin-top: 20px;
+  text-align: center;
+  row-gap: 10px;
+}
