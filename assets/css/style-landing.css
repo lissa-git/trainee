@@ -732,17 +732,68 @@ body a {
   visibility: hidden;
 }
 
-.category-name {
+.card-bottom {
   background-color: var(--dark-grey-color);
   width: 100%;
   padding: 20px 30px 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   -webkit-transition: var(--bg-transition);
   -o-transition: var(--bg-transition);
   transition: var(--bg-transition);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
-.category__link:hover .category-name {
+.category__link:hover .card-bottom {
   background-color: var(--purple-color);
+}
+
+.new-nft__title {
+  margin-bottom: 10px;
+}
+
+.new-nft__all-btn {
+  margin-left: 20px;
+}
+
+.new-nft__list {
+  margin-top: 60px;
+}
+
+.new-nft-item__author {
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  margin-top: 5px;
+}
+
+.new-nft-item__cost {
+  margin-top: 25px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.new-nft-item__price,
+.new-nft-item__highest-bid {
+  color: var(--grey-color);
+  font-size: 12px;
+  line-height: 110%;
+  row-gap: 8px;
+  -webkit-transition: var(--color-transition);
+  -o-transition: var(--color-transition);
+  transition: var(--color-transition);
+}
+
+.new-nft-item__price-value,
+.new-nft-item__highest-bid-value {
+  color: var(--white-color);
+}
+
+.new-nft-item__link:hover .card-bottom {
+  background-color: var(--purple-color);
+}
+
+.new-nft-item__link:hover .new-nft-item__price,
+.new-nft-item__link:hover .new-nft-item__highest-bid {
+  color: var(--white-color);
 }
