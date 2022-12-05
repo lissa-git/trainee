@@ -620,16 +620,24 @@
                 </ul>
             </div>
         </section>
-        <section class="subscribe-form section-padding undone">
+        <section class="subscribe-form section-padding">
             <div class="container">
-                <img class="subscribe-form__img" src="#" alt="spaceman with newspaper">
-                <form class="subscribe-form__form">
-                    <fieldset>
-                        <legend class="subscribe-form__legend">Get exclusive promotions & updates straight to your inbox.</legend>
-                        <input class="subscribe-form__input" type="text" placeholder="Enter your email here">
-                        <button class="subscribe-form__subscribe-btn" type="submit">Subscribe</button>
-                    </fieldset>
-                </form>
+                <div class="subscribe-form__wrapper d-flex justify-content-between align-items-center">
+                    <img class="subscribe-form__img" src="../assets/img/spaceman.png" alt="spaceman with newspaper">
+                    <form class="subscribe-form__form">
+                        <fieldset>
+                            <legend class="subscribe-form__legend fw-600 title-fz">Join our weekly digest</legend>
+                            <p class="subscribe-form__descr">Get exclusive promotions & updates straight to your inbox.</p>
+                            <div class="subscribe-form__inner subscribe-input-wrapper">
+                                <input class="subscribe-form__input subscribe-form-input fz-16" type="text" placeholder="Enter your email here">
+                                <button class="subscribe-form__subscribe-btn btn purple-btn subscribe-form-btn d-flex align-items-center" type="submit">
+                                    <img class="btn-svg" src="../assets/img/mail-ico.svg" alt="mail icon">
+                                    <p class="btn-text">Subscribe</p>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -691,9 +699,9 @@
                     <form class="footer__form">
                         <fieldset class="d-flex flex-column">
                             <legend class="footer__form-legend light-grey fz-16">Get exclusive promotions & updates straight to your inbox.</legend>
-                            <div class="footer__form-inner">
-                                <input class="footer__form-input fz-16" type="text" placeholder="Enter your email here">
-                                <button class="footer__form-subscribe-btn btn purple-btn" type="submit">Subscribe</button>
+                            <div class="footer__form-inner subscribe-input-wrapper">
+                                <input class="footer__form-input fz-16 subscribe-form-input" type="text" placeholder="Enter your email here">
+                                <button class="footer__form-subscribe-btn btn purple-btn subscribe-form-btn" type="submit">Subscribe</button>
                             </div>
                         </fieldset>
                     </form>
