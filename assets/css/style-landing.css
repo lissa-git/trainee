@@ -129,7 +129,19 @@ body a {
   color: var(--white-color);
 }
 
-.container {
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.my-container {
   max-width: 1080px;
   width: 100%;
   padding: 0 15px;
@@ -391,10 +403,6 @@ body a {
   display: none !important;
 }
 
-.header-container {
-  max-width: 1209px;
-}
-
 .header__wrapper {
   margin: 20px 0;
 }
@@ -579,12 +587,16 @@ body a {
 }
 
 .thending__descr {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .collection {
   row-gap: 15px;
+  max-width: 330px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
+
 
 .collection__images {
   display: grid;
@@ -622,51 +634,59 @@ body a {
 }
 
 .creator__view-btn {
-  margin-left: 20px;
+  margin-left: auto;
+  max-width: 248px;
+  width: 100%;
 }
 
-.creators__cards-list {
+.creators__cards {
   margin-top: 60px;
 }
 
-.creator__card {
+.creators__card {
   background-color: var(--dark-grey-color);
   border-radius: 20px;
   padding: 20px;
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   -webkit-transition: var(--bg-transition);
   -o-transition: var(--bg-transition);
   transition: var(--bg-transition);
 }
 
-.creator__card:hover {
+
+
+.creators__card:hover {
   background-color: var(--purple-color);
 }
 
-.creator__figure {
+.creators__figure {
   row-gap: 20px;
 }
 
-.creator__figcaption {
+.creators__figcaption {
   row-gap: 5px;
 }
 
-.creator__sales {
+.creators__sales {
   color: var(--grey-color);
+  text-align: center;
   -webkit-transition: color 0.3s linear;
   -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
-.creator__card:hover .creator__sales {
+.creators__card:hover .creator__sales {
   color: var(--white-color);
 }
 
-.creator__sales-amount {
+.creators__sales-amount {
   color: var(--white-color);
 }
 
-.creator__number {
+.creators__number {
   position: absolute;
   top: 18px;
   left: 20px;
@@ -680,13 +700,19 @@ body a {
   transition: color 0.3s linear, var(--bg-transition);
 }
 
-.creator__card:hover .creator__number {
+.creators__card:hover .creator__number {
   color: var(--dark-color);
   background-color: var(--white-color);
 }
 
 .categories__title {
   margin-bottom: 60px;
+}
+
+.category {
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .category__images {
@@ -748,26 +774,34 @@ body a {
 }
 
 .new-nft__all-btn {
-  margin-left: 20px;
+  margin-left: auto;
+  max-width: 189px;
+  width: 100%;
 }
 
-.new-nft__list {
+.new-nft__items {
   margin-top: 60px;
 }
 
-.new-nft-item__author {
+.new-nft__item {
+  max-width: 330px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.new-nft__item-author {
   margin-top: 5px;
 }
 
-.new-nft-item__cost {
+.new-nft__item-cost {
   margin-top: 25px;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
 }
 
-.new-nft-item__price,
-.new-nft-item__highest-bid {
+.new-nft__item-price,
+.new-nft__item-highest-bid {
   color: var(--grey-color);
   font-size: 12px;
   line-height: 110%;
@@ -777,17 +811,17 @@ body a {
   transition: var(--color-transition);
 }
 
-.new-nft-item__price-value,
-.new-nft-item__highest-bid-value {
+.new-nft__item-price-value,
+.new-nft__item-highest-bid-value {
   color: var(--white-color);
 }
 
-.new-nft-item__link:hover .card-bottom {
+.new-nft__item-link:hover .card-bottom {
   background-color: var(--purple-color);
 }
 
-.new-nft-item__link:hover .new-nft-item__price,
-.new-nft-item__link:hover .new-nft-item__highest-bid {
+.new-nft__item-link:hover .new-nft__item-price,
+.new-nft__item-link:hover .new-nft__item-highest-bid {
   color: var(--white-color);
 }
 
@@ -916,3 +950,37 @@ body a {
 .subscribe-form__subscribe-btn {
   max-width: 211px;
 }
+
+@media (min-width:1100px) {
+  .container {
+    max-width: 1080px;
+    /* width: 100%;
+    padding: 0 15px;
+    margin: 0 auto; */
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+    max-width: 1209px;
+  }
+}
+
+@media (max-width: 990px) {
+  .promo__img-col {
+    margin-top: 30px;
+  }
+  .promo__img {
+    border-radius: 30px 30px 0px 0px;
+  }
+  .creator__view-btn,
+  .new-nft__all-btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 365px) {
+}
+
+
