@@ -123,6 +123,7 @@ body {
   -webkit-text-size-adjust: 100%;
   color: var(--white-color);
   background-color: var(--dark-color);
+  text-transform: capitalize;
 }
 
 body a {
@@ -139,13 +140,6 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.my-container {
-  max-width: 1080px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .btn {
@@ -236,10 +230,16 @@ body a {
   color: var(--purple-color);
 }
 
-.logo__text {
-  padding-left: 12px;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
+.logo {
+  position: relative;
+  padding-left: 44px;
+}
+
+.logo::before {
+  content: url(../img/nft-logo.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @-webkit-keyframes shake {
@@ -276,7 +276,7 @@ body a {
   }
 }
 
-.logo:hover .logo__img {
+.logo:hover::before {
   -webkit-animation: shake 0.6s;
           animation: shake 0.6s;
 }
@@ -285,9 +285,8 @@ body a {
   color: var(--light-grey-color);
 }
 
-.fz-16 {
+.small-fz {
   font-size: 16px;
-  line-height: 22px;
 }
 
 .ff-spacemono {
@@ -305,11 +304,6 @@ body a {
 
 .section-padding {
   padding: 80px 0;
-}
-
-.d-grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .def-column-gap {
@@ -360,10 +354,10 @@ body a {
 }
 
 .subscribe-form-input {
+  width: 100%;
   background-color: var(--white-color);
   border-radius: 20px;
-  width: 100%;
-  padding: 20px 191px 20px 20px;
+  padding: 22px 191px 22px 20px;
 }
 
 .subscribe-form-input::-webkit-input-placeholder {
@@ -387,10 +381,10 @@ body a {
 }
 
 .subscribe-form-btn {
-  max-width: 179px;
   position: absolute;
   top: 0;
   right: 0;
+  max-width: 179px;
 }
 
 .subscribe-form-btn:hover {
@@ -417,16 +411,16 @@ body a {
 }
 
 .header__nav-btn {
+  margin-left: 25px;
   height: 50px;
   width: 50px;
   background-color: transparent;
-  margin-left: 25px;
 }
 
 .header__nav-btn span {
-  background-color: var(--white-color);
   height: 3px;
   width: 100%;
+  background-color: var(--white-color);
 }
 
 .nav-list {
@@ -437,8 +431,8 @@ body a {
 
 .header__signup {
   margin-left: 30px;
-  padding: 20px 30px;
   width: 156px;
+  padding: 20px 30px;
 }
 
 .footer {
@@ -447,9 +441,9 @@ body a {
 }
 
 .footer__inner {
-  border-bottom: 1px solid var(--grey-color);
   margin-bottom: 20px;
   padding-bottom: 30px;
+  border-bottom: 1px solid var(--grey-color);
 }
 
 .footer__logo {
@@ -457,15 +451,16 @@ body a {
 }
 
 .footer__col {
+  max-width: 420px;
+  width: 100%;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  max-width: 420px;
-  width: 100%;
 }
 
 .footer__text {
   max-width: 238px;
+  text-transform: none;
 }
 
 .footer__text + .footer__text {
@@ -473,10 +468,10 @@ body a {
 }
 
 .footer__community-links {
+  margin-top: 15px;
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
-  margin-top: 15px;
 }
 
 .footer__community-link-img path {
@@ -515,6 +510,7 @@ body a {
 .footer__form-legend {
   margin-bottom: 20px;
   max-width: 330px;
+  text-transform: none;
 }
 
 .footer__copy {
@@ -523,14 +519,13 @@ body a {
 }
 
 .promo__title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 67px;
   line-height: 110%;
-  margin-bottom: 20px;
 }
 
 .promo__descr {
-  text-transform: capitalize;
   margin-bottom: 30px;
 }
 
@@ -563,16 +558,16 @@ body a {
 }
 
 .promo__figcaption {
+  padding: 22px 20px;
   background-color: var(--dark-grey-color);
   border-radius: 0px 0px 20px 20px;
-  padding: 22px 20px;
 }
 
 .promo__img-author {
-  border-radius: 50%;
+  position: relative;
   margin-top: 10px;
   padding-left: 36px;
-  position: relative;
+  border-radius: 50%;
 }
 
 .promo__img-author::before {
@@ -592,10 +587,9 @@ body a {
 }
 
 .collection {
-  row-gap: 15px;
+  margin: 30px auto 0 auto;
   max-width: 330px;
-  margin: 0 auto;
-  margin-top: 30px;
+  row-gap: 15px;
 }
 
 
@@ -622,8 +616,8 @@ body a {
 
 .collection__more-link {
   grid-area: d;
-  font-size: 22px;
   padding: 16px;
+  font-size: 22px;
 }
 
 .collection__info {
@@ -645,13 +639,13 @@ body a {
 }
 
 .creators__card {
-  background-color: var(--dark-grey-color);
-  border-radius: 20px;
-  padding: 20px;
-  max-width: 240px;
-  width: 100%;
   margin: 0 auto;
   position: relative;
+  max-width: 240px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--dark-grey-color);
   -webkit-transition: var(--bg-transition);
   -o-transition: var(--bg-transition);
   transition: var(--bg-transition);
@@ -679,7 +673,7 @@ body a {
   transition: color 0.3s linear;
 }
 
-.creators__card:hover .creator__sales {
+.creators__card:hover .creators__sales {
   color: var(--white-color);
 }
 
@@ -701,7 +695,7 @@ body a {
   transition: color 0.3s linear, var(--bg-transition);
 }
 
-.creators__card:hover .creator__number {
+.creators__card:hover .creators__number {
   color: var(--dark-color);
   background-color: var(--white-color);
 }
@@ -711,9 +705,9 @@ body a {
 }
 
 .category {
+  margin: 0 auto;
   max-width: 240px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .category__images {
@@ -756,11 +750,11 @@ body a {
 }
 
 .card-bottom {
-  background-color: var(--dark-grey-color);
   width: 100%;
   padding: 20px 30px 25px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-color: var(--dark-grey-color);
   -webkit-transition: var(--bg-transition);
   -o-transition: var(--bg-transition);
   transition: var(--bg-transition);
@@ -785,9 +779,9 @@ body a {
 }
 
 .new-nft__item {
+  margin: 0 auto;
   max-width: 330px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .new-nft__item-author {
@@ -803,10 +797,10 @@ body a {
 
 .new-nft__item-price,
 .new-nft__item-highest-bid {
+  row-gap: 8px;
   color: var(--grey-color);
   font-size: 12px;
   line-height: 110%;
-  row-gap: 8px;
   -webkit-transition: var(--color-transition);
   -o-transition: var(--color-transition);
   transition: var(--color-transition);
@@ -832,8 +826,8 @@ body a {
 }
 
 .auction__image-author {
-  border-radius: 20px;
   padding: 8px 18px;
+  border-radius: 20px;
   background-color: var(--dark-grey-color);
   -webkit-transition: var(--bg-transition), var(--color-transition);
   -o-transition: var(--bg-transition), var(--color-transition);
@@ -851,20 +845,21 @@ body a {
 }
 
 .auction__timer {
+  max-width: 295px;
+  width: 100%;
   row-gap: 10px;
   padding: 30px;
+  border-radius: 20px;
   background-color: rgba(59, 59, 59, 0.5);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  border-radius: 20px;
-  max-width: 295px;
-  width: 100%;
 }
 
 .auction__timer-descr,
 .auction__timer-item-name {
   font-size: 12px;
   line-height: 110%;
+  text-transform: none;
 }
 
 .auction__timer-items {
@@ -891,6 +886,10 @@ body a {
 }
 
 .work-stage {
+  margin: 0 auto;
+  max-width: 330px;
+  width: 100%;
+  height: 100%;
   background-color: var(--dark-grey-color);
   padding: 10px 30px 30px 30px;
   border-radius: 20px;
@@ -898,10 +897,6 @@ body a {
   -webkit-transition: var(--bg-transition);
   -o-transition: var(--bg-transition);
   transition: var(--bg-transition);
-  max-width: 330px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
 }
 
 .work-stage:hover {
@@ -915,8 +910,12 @@ body a {
 
 .work-stage__figcaption {
   margin-top: 20px;
-  text-align: center;
   row-gap: 10px;
+  text-align: center;
+}
+
+.work-stage__descr {
+  text-transform: none;
 }
 
 .subscribe-form {
@@ -944,7 +943,6 @@ body a {
 .subscribe-form__descr {
   margin-top: 10px;
   margin-bottom: 40px;
-  text-transform: capitalize;
 }
 
 .subscribe-form__input {
@@ -959,7 +957,7 @@ body a {
   .container {
     max-width: 1080px;
   }
-  
+
   .auction-container {
     max-width: 1310px;
     padding: 360px 65px 60px;
@@ -989,7 +987,7 @@ body a {
 }
 
 @media (max-width: 990px) {
-  .promo__img-col {
+  .promo__img-wrapper {
     margin-top: 30px;
   }
 
@@ -1031,7 +1029,9 @@ body a {
   .subscribe-form__subscribe-btn {
     position: static;
     max-width: none;
-    justify-content: center;
+    -webkit-box-pack: center;
+       -ms-flex-pack: center;
+     justify-content: center;
   }
 
   .section-padding {
@@ -1067,7 +1067,9 @@ body a {
   .footer__form-subscribe-btn {
     position: static;
     max-width: none;
-    justify-content: center;
+    -webkit-box-pack: center;
+       -ms-flex-pack: center;
+     justify-content: center;
   }
 
   .section-padding {
