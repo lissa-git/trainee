@@ -416,6 +416,19 @@ body a {
           animation: shake 0.6s;
 }
 
+.header__nav-btn {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  margin-left: 25px;
+}
+
+.header__nav-btn span {
+  background-color: var(--white-color);
+  height: 3px;
+  width: 100%;
+}
+
 .nav-list {
   -webkit-column-gap: 50px;
      -moz-column-gap: 50px;
@@ -425,6 +438,7 @@ body a {
 .header__signup {
   margin-left: 30px;
   padding: 20px 30px;
+  width: 156px;
 }
 
 .footer {
@@ -446,19 +460,6 @@ body a {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-}
-
-.footer__col:first-child {
-  max-width: 327px;
-  width: 100%;
-}
-
-.footer__col:nth-child(2) {
-  max-width: 240px;
-  width: 100%;
-}
-
-.footer__col:last-child {
   max-width: 420px;
   width: 100%;
 }
@@ -957,9 +958,6 @@ body a {
 @media (min-width:1100px) {
   .container {
     max-width: 1080px;
-    /* width: 100%;
-    padding: 0 15px;
-    margin: 0 auto; */
   }
   .auction-container {
     max-width: 1310px;
@@ -979,6 +977,11 @@ body a {
   }
   .auction {
     background: url("../img/auction-bg.jpg") 0 0/cover no-repeat;
+  }
+  .nav-list {
+    -webkit-column-gap: 25px;
+      -moz-column-gap: 25px;
+            column-gap: 25px;
   }
 }
 
@@ -1031,4 +1034,19 @@ body a {
   }
 }
 
+@media (max-width: 450px) {
+  .footer__form-inner {
+    row-gap: 20px;
+  }
+
+  .footer__form-input {
+    padding-right: 20px;
+  }
+
+  .footer__form-subscribe-btn {
+    position: static;
+    max-width: none;
+    justify-content: center;
+  }
+}
 
