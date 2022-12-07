@@ -959,6 +959,7 @@ body a {
   .container {
     max-width: 1080px;
   }
+  
   .auction-container {
     max-width: 1310px;
     padding: 360px 65px 60px;
@@ -975,9 +976,11 @@ body a {
   .auction-container {
     background: none;
   }
+
   .auction {
     background: url("../img/auction-bg.jpg") 0 0/cover no-repeat;
   }
+
   .nav-list {
     -webkit-column-gap: 25px;
       -moz-column-gap: 25px;
@@ -989,18 +992,22 @@ body a {
   .promo__img-col {
     margin-top: 30px;
   }
+
   .promo__img {
     border-radius: 30px 30px 0px 0px;
   }
+
   .creator__view-btn,
   .new-nft__all-btn {
     margin-left: 0;
     margin-top: 20px;
   }
+
   .subscribe-form__form {
     max-width: none;
     width: 100%;
   }
+
   .subscribe-form__img {
     max-width: 579px;
     min-width: 316px;
@@ -1026,6 +1033,20 @@ body a {
     max-width: none;
     justify-content: center;
   }
+
+  .section-padding {
+    padding: 70px 0;
+}
+}
+
+@media (max-width: 576px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  .promo__title {
+    font-size: 60px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1047,6 +1068,35 @@ body a {
     position: static;
     max-width: none;
     justify-content: center;
+  }
+
+  .section-padding {
+    padding: 40px 0;
+  }
+
+  .promo__title {
+    font-size: 52px;
+  }
+
+  .thending__descr {
+    margin-bottom: 10px;
+  }
+
+  .new-nft__items,
+  .creators__cards {
+    margin-top: 35px;
+  }
+
+  .categories__title {
+    margin-bottom: 40px;
+  }
+
+  .stages__list {
+    margin-top: 40px;
+  }
+
+  .subscribe-form__wrapper {
+    padding: 50px;
   }
 }
 
