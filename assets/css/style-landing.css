@@ -393,10 +393,6 @@ body a {
   color: var(--white-color);
 }
 
-.undone {
-  display: none !important;
-}
-
 .header__wrapper {
   margin: 20px 0;
 }
@@ -845,6 +841,7 @@ body a {
 }
 
 .auction__timer {
+  margin: 0 auto;
   max-width: 295px;
   width: 100%;
   row-gap: 10px;
@@ -1010,6 +1007,10 @@ body a {
     max-width: 579px;
     min-width: 316px;
     width: 100%;
+  }
+
+  .auction__timer {
+    margin-left: 0;
   }
 }
 

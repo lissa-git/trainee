@@ -22,24 +22,16 @@
                             <a class="header__logo logo ff-spacemono fw-600" href="#">NFT Marketplace</a>
                         </div>
                         <div class="col-xl-6 col-lg-7 col-md-5 col-3">
-                            <div class="header__inner d-flex">
-                                <nav class="header__nav d-flex align-items-center order-lg-0 order-1">
-                                    <ul class="header__nav-list nav-list d-none d-lg-flex justify-content-between">
-                                        <li class="nav-list__item small-fz fw-600">
-                                            <a class="nav-list__item-link underline-animation" href="#">Marketplace</a>
-                                        </li>
-                                        <li class="nav-list__item small-fz fw-600">
-                                            <a class="nav-list__item-link underline-animation" href="#">Rankings</a>
-                                        </li>
-                                        <li class="nav-list__item small-fz fw-600">
-                                            <a class="nav-list__item-link underline-animation" href="#">Connect a wallet</a>
-                                        </li>
-                                    </ul>
-                                    <button class="header__nav-btn d-lg-none d-flex flex-column justify-content-between">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
+                            <div class="header__inner d-flex align-items-center">
+                                <button class="header__nav-btn d-lg-none d-flex flex-column justify-content-between order-1">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <nav class="header__nav nav-list d-none d-lg-flex justify-content-between align-items-center">
+                                        <a class="nav-list__link underline-animation small-fz fw-600" href="#">Marketplace</a>
+                                        <a class="nav-list__link underline-animation small-fz fw-600" href="#">Rankings</a>
+                                        <a class="nav-list__link underline-animation small-fz fw-600" href="#">Connect a wallet</a>
                                 </nav>
                                 <button class="header__signup purple-btn btn d-md-flex align-items-center order-lg-1 order-0 d-none">
                                     <svg class="btn-svg purple-btn__svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -74,8 +66,8 @@
                                 </button>
                                 <ul class="promo__statistic d-flex justify-content-between">
                                     <li class="promo__statistic-item statistic-item d-flex flex-column">
-                                        <p class="statistic-item__total d-flex flex-column ff-spacemono fw-600">240k+</p>
-                                        <p class="statistic-item__name d-flex flex-column">Total Sale</p>
+                                        <p class="statistic-item__total ff-spacemono fw-600">240k+</p>
+                                        <p class="statistic-item__name">Total Sale</p>
                                     </li>
                                     <li class="promo__statistic-item">
                                         <p class="statistic-item__total ff-spacemono fw-600">100k+</p>
@@ -91,8 +83,7 @@
                         <div class="col">
                             <div class="promo__img-wrapper">
                                 <figure class="promo__figure d-flex flex-column justify-content-center">
-                                        <img class="promo__img" src="../assets/img/space-walker.jpg"
-                                        alt="Space Walking">
+                                        <img class="promo__img" src="../assets/img/space-walker.jpg" alt="Space Walking">
                                     <figcaption class="promo__figcaption d-flex flex-column">
                                         <a class="promo__img-name fw-600 white-link" href="#">Space Walking</a>
                                         <a class="promo__img-author small-fz white-link" href="#">Animakid</a>
@@ -105,8 +96,10 @@
             </section>
             <section class="trending section-padding">
                 <div class="container">
-                    <h2 class="trending__title fw-600 title-fz">Trending Collection</h2>
-                    <p class="thending__descr">Checkout our weekly updated trending collection.</p>
+                    <div class="row">
+                        <h2 class="trending__title fw-600 title-fz">Trending Collection</h2>
+                        <p class="thending__descr">Checkout our weekly updated trending collection.</p>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <div class="trending__collection collection d-flex flex-column">
@@ -187,8 +180,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/keepitreal.png"
-                                                alt="Keepitreal avatar">
+                                            <img class="creators__img" src="../assets/img/keepitreal.png" alt="Keepitreal avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">Keepitreal</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -204,8 +196,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/digi-lab.png"
-                                                alt="DigiLab avatar">
+                                            <img class="creators__img" src="../assets/img/digi-lab.png" alt="DigiLab avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">DigiLab</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -221,8 +212,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/gravity-one.png"
-                                                alt="GravityOne avatar">
+                                            <img class="creators__img" src="../assets/img/gravity-one.png" alt="GravityOne avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">GravityOne</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -238,8 +228,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/juanie.png"
-                                                alt="Juanie avatar">
+                                            <img class="creators__img" src="../assets/img/juanie.png" alt="Juanie avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">Juanie</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -255,8 +244,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/blue-whale.png"
-                                                alt="BlueWhale avatar">
+                                            <img class="creators__img" src="../assets/img/blue-whale.png" alt="BlueWhale avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">BlueWhale</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -272,8 +260,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/mr-fox.png"
-                                                alt="Mr Fox avatar">
+                                            <img class="creators__img" src="../assets/img/mr-fox.png" alt="Mr Fox avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">Mr Fox</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -289,8 +276,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/shroomie.png"
-                                                alt="Shroomie avatar">
+                                            <img class="creators__img" src="../assets/img/shroomie.png" alt="Shroomie avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">Shroomie</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -306,8 +292,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/robotica.png"
-                                                alt="Robotica avatar">
+                                            <img class="creators__img" src="../assets/img/robotica.png" alt="Robotica avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">Robotica</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -323,8 +308,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/rusty-robot.png"
-                                                alt="RustyRobot avatar">
+                                            <img class="creators__img" src="../assets/img/rusty-robot.png" alt="RustyRobot avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">RustyRobot</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -340,8 +324,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/animakid.png"
-                                                alt="Animakid avatar">
+                                            <img class="creators__img" src="../assets/img/animakid.png" alt="Animakid avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">Animakid</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -357,8 +340,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/dotgu.png"
-                                                alt="Dotgu avatar">
+                                            <img class="creators__img" src="../assets/img/dotgu.png" alt="Dotgu avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">Dotgu</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -374,8 +356,7 @@
                                 <div class="creators__card">
                                     <a class="creators__link" href="#">
                                         <figure class="creators__figure d-flex flex-column align-items-center">
-                                            <img class="creators__img" src="../assets/img/ghiblier.png"
-                                                alt="Ghiblier avatar">
+                                            <img class="creators__img" src="../assets/img/ghiblier.png" alt="Ghiblier avatar">
                                             <figcaption class="creators__figcaption d-flex flex-column align-items-center">
                                                 <p class="creators__name">Ghiblier</p>
                                                 <p class="creators__sales small-fz">Total Sales: 
@@ -393,16 +374,16 @@
             </section>
             <section class="categories section-padding">
                 <div class="container">
-                    <h2 class="categories__title fw-600 title-fz">Browse Categories</h2>
+                    <div class="row">
+                        <h2 class="categories__title fw-600 title-fz">Browse Categories</h2>
+                    </div>
                     <div class="row def-row-gap">
                         <div class="col">
                             <div class="categories__item category">
                                 <a class="category__link d-flex flex-column" href="#">
                                     <div class="category__images">
-                                        <img class="category__img" src="../assets/img/art-category.png"
-                                            alt="Art category">
-                                        <img class="category__ico" src="../assets/img/art-category-ico.svg" 
-                                            alt="Art category icon">
+                                        <img class="category__img" src="../assets/img/art-category.png" alt="Art category">
+                                        <img class="category__ico" src="../assets/img/art-category-ico.svg" alt="Art category icon">
                                     </div>
                                     <p class="category-name card-bottom">Art</p>   
                                 </a>
@@ -412,10 +393,8 @@
                             <div class="categories__item category">
                                 <a class="category__link" href="#">
                                     <div class="category__images">
-                                        <img class="category__img" src="../assets/img/collectibles-category.png"
-                                            alt="Art category">
-                                        <img class="category__ico" src="../assets/img/collectibles-category-ico.svg" 
-                                            alt="Art category icon">
+                                        <img class="category__img" src="../assets/img/collectibles-category.png" alt="Art category">
+                                        <img class="category__ico" src="../assets/img/collectibles-category-ico.svg" alt="Art category icon">
                                     </div>
                                     <p class="category-name card-bottom">Collectibles</p> 
                                 </a>
@@ -425,10 +404,8 @@
                             <div class="categories__item category">
                                 <a class="category__link" href="#">
                                     <div class="category__images">
-                                        <img class="category__img" src="../assets/img/music-category.png"
-                                            alt="Art category">
-                                        <img class="category__ico" src="../assets/img/music-category-ico.svg" 
-                                            alt="Art category icon">
+                                        <img class="category__img" src="../assets/img/music-category.png" alt="Art category">
+                                        <img class="category__ico" src="../assets/img/music-category-ico.svg" alt="Art category icon">
                                     </div>
                                     <p class="category-name card-bottom">Music</p>  
                                 </a>
@@ -438,10 +415,8 @@
                             <div class="categories__item category">
                                 <a class="category__link" href="#">
                                     <div class="category__images">
-                                        <img class="category__img" src="../assets/img/photography-category.png"
-                                            alt="Art category">
-                                        <img class="category__ico" src="../assets/img/photography-category-ico.svg" 
-                                            alt="Art category icon">
+                                        <img class="category__img" src="../assets/img/photography-category.png" alt="Art category">
+                                        <img class="category__ico" src="../assets/img/photography-category-ico.svg" alt="Art category icon">
                                     </div>
                                     <p class="category-name card-bottom">Photography</p>
                                 </a>
@@ -451,10 +426,8 @@
                             <div class="categories__item category">
                                 <a class="category__link" href="#">
                                     <div class="category__images">
-                                        <img class="category__img" src="../assets/img/video-category.png"
-                                            alt="Art category">
-                                        <img class="category__ico" src="../assets/img/video-category-ico.svg" 
-                                            alt="Art category icon">
+                                        <img class="category__img" src="../assets/img/video-category.png" alt="Art category">
+                                        <img class="category__ico" src="../assets/img/video-category-ico.svg" alt="Art category icon">
                                     </div>
                                     <p class="category-name card-bottom">Video</p>  
                                 </a>
@@ -464,10 +437,8 @@
                             <div class="categories__item category">
                                 <a class="category__link" href="#">
                                     <div class="category__images">
-                                        <img class="category__img" src="../assets/img/utility-category.png"
-                                            alt="Art category">
-                                        <img class="category__ico" src="../assets/img/utility-category-ico.svg" 
-                                            alt="Art category icon">
+                                        <img class="category__img" src="../assets/img/utility-category.png" alt="Art category">
+                                        <img class="category__ico" src="../assets/img/utility-category-ico.svg" alt="Art category icon">
                                     </div>
                                     <p class="category-name card-bottom">Utility</p>   
                                 </a>
@@ -477,10 +448,8 @@
                             <div class="categories__item category">
                                 <a class="category__link" href="#">
                                     <div class="category__images">
-                                        <img class="category__img" src="../assets/img/sport-category.png"
-                                            alt="Art category">
-                                        <img class="category__ico" src="../assets/img/sport-category-ico.svg" 
-                                            alt="Art category icon">
+                                        <img class="category__img" src="../assets/img/sport-category.png" alt="Art category">
+                                        <img class="category__ico" src="../assets/img/sport-category-ico.svg" alt="Art category icon">
                                     </div>
                                     <p class="category-name card-bottom">Sport</p>   
                                 </a>
@@ -490,10 +459,8 @@
                             <div class="categories__item category">
                                 <a class="category__link" href="#">
                                     <div class="category__images">
-                                        <img class="category__img" src="../assets/img/virtual-worlds-category.png"
-                                            alt="Art category">
-                                        <img class="category__ico" src="../assets/img/virtual-worlds-category-ico.svg" 
-                                            alt="Art category icon">
+                                        <img class="category__img" src="../assets/img/virtual-worlds-category.png" alt="Art category">
+                                        <img class="category__ico" src="../assets/img/virtual-worlds-category-ico.svg" alt="Art category icon">
                                     </div>
                                     <p class="category-name card-bottom">Virtual Worlds</p>    
                                 </a>
@@ -527,8 +494,7 @@
                                 <div class="new-nft__item">
                                     <a class="new-nft__item-link" href="#">
                                         <figure class="new-nft__item-figure">
-                                            <img class="new-nft__item-img" src="../assets/img/distant-galaxy.png"
-                                                alt="Distant Galaxy">
+                                            <img class="new-nft__item-img" src="../assets/img/distant-galaxy.png" alt="Distant Galaxy">
                                             <figcaption class="new-nft__item-figcaption card-bottom d-flex flex-column">
                                                 <p class="new-nft__item-name fw-600">Distant Galaxy</p>
                                                 <p class="new-nft__item-author small-fz ff-spacemono d-flex align-items-center avatar-ico-gap">
@@ -554,8 +520,7 @@
                                 <div class="new-nft__item">
                                     <a class="new-nft__item-link" href="#">
                                         <figure class="new-nft__item-figure">
-                                            <img class="new-nft__item-img" src="../assets/img/life-of-edena.png"
-                                                alt="Life On Edena">
+                                            <img class="new-nft__item-img" src="../assets/img/life-of-edena.png" alt="Life On Edena">
                                             <figcaption class="new-nft__item-figcaption card-bottom d-flex flex-column">
                                                 <p class="new-nft__item-name fw-600">Life On Edena</p>
                                                 <p class="new-nft__item-author small-fz ff-spacemono d-flex align-items-center avatar-ico-gap">
@@ -581,8 +546,7 @@
                                 <div class="new-nft__item">
                                     <a class="new-nft__item-link" href="#">
                                         <figure class="new-nft__item-figure">
-                                            <img class="new-nft__item-img" src="../assets/img/astro-fiction.png"
-                                                alt="AstroFiction">
+                                            <img class="new-nft__item-img" src="../assets/img/astro-fiction.png" alt="AstroFiction">
                                             <figcaption class="new-nft__item-figcaption card-bottom d-flex flex-column">
                                                 <p class="new-nft__item-name fw-600">AstroFiction</p>
                                                 <p class="new-nft__item-author small-fz ff-spacemono d-flex align-items-center avatar-ico-gap">
@@ -664,8 +628,7 @@
                             <div class="col">
                                 <div class="stages__list-item work-stage">
                                     <figure class="work-stage__figure d-flex flex-column align-items-center">
-                                        <img class="work-stage__img" src="../assets/img/wallet-ico.svg"
-                                            alt="wallet image">
+                                        <img class="work-stage__img" src="../assets/img/wallet-ico.png" alt="wallet image">
                                         <figcaption class="work-stage__figcaption d-flex flex-column align-items-center">
                                             <p class="work-stage__name fw-600">Setup Your wallet</p>
                                             <p class="work-stage__descr small-fz">Set up your wallet of choice. 
@@ -678,8 +641,7 @@
                             <div class="col">
                                 <div class="stages__list-item work-stage">
                                     <figure class="work-stage__figure d-flex flex-column align-items-center">
-                                        <img class="work-stage__img" src="../assets/img/collection-ico.svg"
-                                            alt="collection image">
+                                        <img class="work-stage__img" src="../assets/img/collection-ico.png" alt="collection image">
                                         <figcaption class="work-stage__figcaption d-flex flex-column align-items-center">
                                             <p class="work-stage__name fw-600">Create Collection</p>
                                             <p class="work-stage__descr small-fz">Upload your work and setup your collection. 
@@ -692,8 +654,7 @@
                             <div class="col">
                                 <div class="stages__list-item work-stage">
                                     <figure class="work-stage__figure d-flex flex-column align-items-center">
-                                        <img class="work-stage__img" src="../assets/img/cart-ico.svg"
-                                            alt="cart image">
+                                        <img class="work-stage__img" src="../assets/img/cart-ico.png" alt="cart image">
                                         <figcaption class="work-stage__figcaption d-flex flex-column align-items-center">
                                             <p class="work-stage__name fw-600">Start Earning</p>
                                             <p class="work-stage__descr small-fz">Choose between auctions and fixed-price listings. 
